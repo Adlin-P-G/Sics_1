@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        Name:<input type="text" name="Iname" id="Iname" required><br>
+        Password:<input type="password" name="Ipass" id="Ipass" required><br>
+        Email:<input type="email" name="Iemail" id="Iemail" required><br>
+        <input type="submit" onclick="regNot()">
+    </form>
+    <script>
+        function regNot()
+        {
+            let n=document.getElementById("Iname").value;
+            // console.log(n);
+            let p=document.getElementById("Ipass").value;
+            let e=document.getElementById("Iemail").value;
+            if (n=="" || p=="" || e=="")
+            {
+                alert("Must insert all fields");
+            }
+            else
+            {
+                alert("Registration Successful");
+            }
+        }
+    </script>
+</body>
+</html>
